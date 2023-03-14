@@ -1,0 +1,20 @@
+//an array of positive integers A1,A2,...,An with legnth N and you have to print an array of same legnth(N) where the values in the new array are the sum of every number in the array, except the number at that index.
+#include<stdio.h>
+main()
+{
+    int T;
+    scanf("%d",&T);
+    while(T--)
+    {
+    	long int N,i,sum=0;
+    	scanf("%ld",&N);
+    	long int a[N];
+    	for(i=0;i<N;i++)
+    	scanf("%ld",&a[i]);
+    	for(i=0;i<N;i++)
+    	sum=sum+a[i];
+    	for(i=0;i<N;i++)
+    	printf("%ld ",sum-a[i]);
+	}
+	
+}
